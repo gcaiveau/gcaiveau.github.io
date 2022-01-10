@@ -66,6 +66,8 @@ nav li:hover a{
 	color: orange;
 	background: black;
 	transition: 0.3s all;
+        height: 100%;
+        width: 100%;
 }
 .submenu li{
 	border-bottom: 1px solid orange;
