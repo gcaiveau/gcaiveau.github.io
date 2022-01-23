@@ -1,0 +1,160 @@
+body{
+	background: white;	
+}
+nav{
+	background: orange;
+}
+nav > ul{
+	margin: 0px;
+	padding: 0px;
+}
+nav > ul::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+nav > ul > li{
+	float:  left;
+	position: relative;
+}
+nav > ul > li > a{
+	padding: 20px 30px;
+	color: black;
+	font-size: 3vh;
+}
+nav li{
+	list-style-type: none;
+}
+.submenu{
+	display: none;
+}
+nav a{
+	display: inline-block;
+	text-decoration: none;
+}
+nav li:hover .submenu{
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	padding: 0px;
+	z-index: 1000;
+}
+nav li:hover a{
+	color: orange;
+	background: black;
+	transition: 0.3s all;
+	height: 100%;
+	width: 100%;
+}
+.submenu li{
+	border-bottom: 1px solid orange;
+	background: orange;
+}
+.submenu li a{
+	padding: 15px 30px;
+	font-size: 2vh;
+}
+ul.paragraphe{
+	list-style-type: none;
+}
+p.title{
+	font-size: 7vh;
+	text-shadow: 2px 2px 5px orange;
+	text-align: center;
+	animation: apparition 0.8s ease-out;
+}
+@keyframes apparition{
+	from{
+		opacity: 0;
+		transform: translateY(-100px);
+	}
+	to{
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+p.texte{
+	font-size: 3vh;
+	text-align: center;
+}
+.espace{
+	height: 50vh;
+	background: white;
+	color: white;
+}
+.finale17{
+	width: 50vh;
+	height: 28;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.espace1{
+	height: 35vh;
+	background: white;
+	color: white;
+}
+div.milieu{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#slide{
+	width: 640px;
+	overflow: hidden;
+	border: 2px solid orange;
+}
+.image{
+	display: flex;
+	animation-duration: 10s;
+	animation-name: slide;
+	animation-iteration-count: infinite;	
+}
+@keyframes slide{
+	0%{
+		transform: translateX(0);
+	}
+	25%{
+		transform: translateX(-640px);
+	}
+	50%{
+		transform: translateX(-1280px);
+	}
+	75%{
+		transform: translateX(-1920px);
+	}
+	100%{
+		transform: translateX(0);
+	}
+
+
+}
+div.distance{
+	padding-top: 10vh;
+}
+footer{
+	background: orange;
+	height: 25vh;
+}
+ul.bas{
+	font-size: 3vh;
+	list-style-type: none;
+	margin-left: 30px;
+}
+li.lien{
+	text-decoration: underline;
+	display:inline-block ;
+	margin-left: 10vh;
+}
+li.lien a{
+	color: blue;
+}
+.nba{
+	width: 25vh ;
+	weight: 25vh;
+	position: absolute;
+	right: 15vh;
+}
